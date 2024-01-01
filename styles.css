@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    font-size: 16px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 8px;
+    height: 100%;
+}
+
+.red {
+    color: red;
+}
+.green {
+    color: rgb(12, 177, 12);
+}
+.black {
+    color: black;
+}
+.sidebar h1, .container h1 {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    margin-left: .6rem;
+    font-weight: 600;
+}
+.flex__child h1 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.table h2 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.small__text, td {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1rem;
+    color: #85888d;
+}
+.medium__text, td .name__email h1 {
+    font-weight: 600;
+    font-size: 16px;
+}
+.big__text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+.bottom {
+    font-weight: 500;
+}
+.sidebar {
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    border: 1px solid #e5e7eb;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem;
+}
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: .6rem;
+}
+
+.dash, .your__teams {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: .2rem;
+}
+.sidebar__btn, .profile__btn, .caption__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: black;
+    padding: .5rem .6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    position: relative;
+}
+.sidebar__btn:hover, .profile__btn:hover {
+    background-color: rgb(246, 241, 241);
+    color: rgba(79, 70, 229, 0.6);
+}
+.sidebar__btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: grey;
+}
+.sidebar__btn:hover > svg, .sidebar__btn:hover .box-let {
+    stroke: rgba(79, 70, 229, 0.6);
+    border-color: rgba(79, 70, 229, 0.6);
+}
+.counter {
+    background-color: white;
+    border: 1px solid grey;
+    padding: .2rem .6rem;
+    border-radius: 16px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+}
+.box-let {
+    border: 1px solid grey;
+    padding: .2rem .4rem;
+    border-radius: 20%;
+    font-size: .4rem;
+}
+.avatar {
+    margin-top: auto;
+}
+.avatar img {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+}
+.main {
+    margin-left: 300px;
+}
+.container {
+    
+    background-color: #eceff6;
+    border-radius: .3rem;
+    padding: 1.5rem 1rem 1rem;
+}
+.data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+}
+.box .top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    border-radius: .5rem .5rem 0 0;
+    padding: .8rem 0 .8rem .8rem;
+    background-color: white;
+}
+.icon {
+    background-color: rgba(79, 70, 229, 0.9);
+    border-radius: .3em;
+    padding: 15px;
+}
+.icon img {
+    width: 30px;
+    height: 30px;
+    stroke: white;
+}
+.bottom {
+    background-color: rgb(249 250 251);
+    color: rgba(79, 70, 229, 0.6);
+    padding: 1em 0 1em 1.5em;
+    border-radius: 0 0 .5rem .5rem;
+    font-weight: 500;
+}
+.bottom p {
+    cursor: pointer;
+    width: fit-content;
+}
+.fluxes {
+    font-size: 14px;
+}
+
+.table__column {
+    margin-top: 1rem;
+    border: 1px solid #eceff6;;
+    border-radius: .3rem;
+    padding: 1.5rem 1rem 1rem;
+    width: stretch;
+}
+
+.flex__child {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+}
+.flex__child .caption__btn {
+    margin-left: auto;
+    text-wrap: nowrap;
+}
+.flex__child button {
+    background-color: rgba(79, 70, 229, 0.9);
+    color: white;
+    padding: .4em .6em;
+    border: none;
+    border-radius: .4em;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.name__email h1 {
+    color: black;
+}
+td:nth-child(3) button {
+    background-color: rgb(235, 247, 235);
+    border: 1px solid green;
+    border-radius: .4em;
+    padding: .1em .6em;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1rem;
+    color: green;
+    cursor: pointer;
+}
+.td:last-child {
+    color: blue;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.flex__child img {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: fill;
+}
+
+@media (max-width: 900px) {
+    th {
+        display: none;
+    }
+    td {
+        display: block;
+        width: 100%;
+        padding-left: 1rem;
+    }
+    td:first-child {
+        margin-top: 1rem;
+    }
+    td:last-child {
+        margin-bottom: 1rem;
+    }
+    tr:nth-child(even) {
+        background-color: #f6f6f7;
+        border-radius: 3rem;
+    }
+
+    .sidebar {
+        width: 200px;
+        padding: .4rem;
+    }
+    .sidebar__btn, .profile__btn, .caption__btn {
+        column-gap: 10px;
+    }
+    .main {
+        margin-left: 200px;
+    }
+}
+
+/* Initially hide the scrollbar */
+    ::-webkit-scrollbar {
+    width: 0.2em; /* Adjust as needed */
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb */
+    }
+
+    ::-webkit-scrollbar-track {
+    background-color: transparent; /* Hide the track */
+    }
+
+    /* Show the scrollbar on hover */
+    :hover::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Adjust as needed */
+    }
+
+    :hover::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Adjust as needed */
+    }
