@@ -271,6 +271,32 @@ th, td {
     }
 }
 
+@media (max-width: 600px) {
+    .main {
+        margin-left: 50px;
+    }
+    .logo img {
+        width: 2.2rem;
+        height: auto;
+        margin-inline: auto;
+        margin-top: .2rem;
+    }
+    .sidebar {
+        width: 50px;
+        display: block;
+    }
+    .sidebar__btn {
+        display: block;
+        margin-inline: auto;
+    }
+    .sidebar__btn svg {
+        
+    }
+    .sidebar__btn p, .your__teams h1, .profile__btn p, .counter, .avatar {
+        display: none;
+    }
+}
+
 /* Initially hide the scrollbar */
     ::-webkit-scrollbar {
     width: 0.2em; /* Adjust as needed */
