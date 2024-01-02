@@ -58,7 +58,7 @@ a {
 }
 .big__text {
     font-size: 1.5rem;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
     font-weight: 600;
 }
 .bottom {
@@ -163,7 +163,7 @@ a {
 .icon {
     background-color: rgba(79, 70, 229, 0.9);
     border-radius: .25rem;
-    padding: 8px;
+    padding: 12px 12px;
 }
 .icon img {
     width: 20px;
