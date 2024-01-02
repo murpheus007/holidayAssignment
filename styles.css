@@ -76,7 +76,7 @@ a {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    padding: 1rem;
+    padding: .6rem 1rem;
 }
 .logo img {
     width: 50px;
@@ -149,7 +149,7 @@ a {
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: .5rem;
+    gap: .6rem;
 }
 .box .top {
     display: flex;
